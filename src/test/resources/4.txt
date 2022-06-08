@@ -1,0 +1,12 @@
+
+Lists of 10 third-party dependencies.
+     (The Apache Software License, Version 2.0) Jackson-annotations (com.fasterxml.jackson.core:jackson-annotations:2.9.0 - http://github.com/FasterXML/jackson)
+     (The Apache Software License, Version 2.0) Jackson-core (com.fasterxml.jackson.core:jackson-core:2.9.6 - https://github.com/FasterXML/jackson-core)
+     (The Apache Software License, Version 2.0) jackson-databind (com.fasterxml.jackson.core:jackson-databind:2.9.6 - http://github.com/FasterXML/jackson)
+     (The Apache Software License, Version 2.0) jackson-module-kotlin (com.fasterxml.jackson.module:jackson-module-kotlin:2.9.6 - https://github.com/FasterXML/jackson-module-kotlin)
+     (The Apache Software License, Version 2.0) Guava: Google Core Libraries for Java (com.google.guava:guava:18.0 - http://code.google.com/p/guava-libraries/guava)
+     (Unknown license) module1 (io.jitpack:module1:2.0-SNAPSHOT - http://maven.apache.org)
+     (Common Public License Version 1.0) JUnit (junit:junit:3.8.1 - http://junit.org)
+     (The Apache Software License, Version 2.0) IntelliJ IDEA Annotations (org.jetbrains:annotations:13.0 - http://www.jetbrains.org)
+     (The Apache License, Version 2.0) org.jetbrains.kotlin:kotlin-reflect (org.jetbrains.kotlin:kotlin-reflect:1.2.21 - https://kotlinlang.org/)
+     (The Apache License, Version 2.0) org.jetbrains.kotlin:kotlin-stdlib (org.jetbrains.kotlin:kotlin-stdlib:1.2.21 - https://kotlinlang.org/)
