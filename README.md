@@ -15,7 +15,7 @@ mvn license:add-third-party
 <dependency>
     <groupId>com.coder4</groupId>
     <artifactId>mvndeplic-parser</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 
 ```
@@ -30,7 +30,12 @@ LicParseResult res = LicParser.parse(file);
 
 // Get result
 for (LicParseItem item : res.getItems()) {
-    System.out.println(item.getDep());
+    // dep item
+    System.out.println(item.getDep().getGroupId());
+    System.out.println(item.getDep().getArtifactId());
+    System.out.println(item.getDep().getVersion());
+    
+    // licenses
     for (String lic: item.getLicenses()) {
         System.out.println(lic);
     }
