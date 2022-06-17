@@ -9,7 +9,7 @@ mvn license:add-third-party
 
 # Get file under target/generated-sources/license/THIRD-PARTY.txt
 ```
-## How to get using maven
+## Maven usage
 ```
 <!-- https://mvnrepository.com/artifact/com.coder4/mvndeptree-flatparser -->
 <dependency>
@@ -20,7 +20,7 @@ mvn license:add-third-party
 
 ```
 
-## How to use mvndeplic-parser
+## Code usage
 ```
 // str mode
 LicParseResult res = LicParser.parse(str);
