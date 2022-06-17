@@ -5,15 +5,15 @@ import java.util.List;
 
 public class LicParseItem {
 
-    private String dep;
+    private LicDepItem dep;
 
     private List<String> licenses = new ArrayList<>();
 
-    public String getDep() {
+    public LicDepItem getDep() {
         return dep;
     }
 
-    public void setDep(String dep) {
+    public void setDep(LicDepItem dep) {
         this.dep = dep;
     }
 

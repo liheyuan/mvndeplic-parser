@@ -46,7 +46,22 @@ public class LicParser {
 
             if (list.size() >= 2) {
                 LicParseItem item = new LicParseItem();
-                item.setDep(list.get(list.size() - 1));
+                // Parse dep
+                String depStr = list.get(list.size() - 1);
+                String[] parts1 = depStr.split(" - ");
+                if (parts1.length != 2) {
+                    continue;
+                }
+                String [] parts2 = parts1[0].trim().split(":");
+                if (parts2.length != 3) {
+                    continue;
+                }
+                LicDepItem dep = new LicDepItem();
+                dep.setGroupId(parts2[0]);
+                dep.setArtifactId(parts2[1]);
+                dep.setVersion(parts2[2]);
+                item.setDep(dep);
+                // other license
                 list.stream().limit(list.size() - 1).forEach(item::addLicense);
                 result.addItem(item);
             }

@@ -48,6 +48,9 @@ public class LicParserTest {
         Assert.assertEquals(2, res.getItems().get(0).getLicenses().size());
         Assert.assertEquals(1, res.getItems().get(2).getLicenses().size());
         Assert.assertEquals("Apache License 2.0", res.getItems().get(3).getLicenses().get(0));
+        Assert.assertEquals("org.yaml", res.getItems().get(45).getDep().getGroupId());
+        Assert.assertEquals("snakeyaml", res.getItems().get(45).getDep().getArtifactId());
+        Assert.assertEquals("1.29", res.getItems().get(45).getDep().getVersion());
     }
 
     // Test mvn lic mutiple project
